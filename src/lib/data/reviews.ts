@@ -1,0 +1,190 @@
+export interface Review {
+  id: string;
+  authorName: string;
+  profile?: string;
+  rating: number; // 1 to 5
+  comment: string;
+  age?: string;
+  isNew?: boolean;
+  priceNote?: string;
+  interactionsCount?: number;
+  status: 'pending' | 'approved' | 'rejected';
+  createdAt?: string;
+  verified?: boolean;
+}
+
+export const AUTHENTIC_REVIEWS: Review[] = [
+  {
+    id: 'rev-1',
+    authorName: 'Client non identifié dans la source',
+    rating: 5,
+    comment: '« si vous vivez dans les environs et que vous aimez vous faire plaisir, c\'est un coin pour vous. le complexe contient un billard, une piscine, une restauration raffinée ... »',
+    status: 'approved',
+  },
+  {
+    id: 'rev-2',
+    authorName: 'Monique Mbiben',
+    profile: '1 avis',
+    rating: 5,
+    comment: '« Ces très cool d\'y être l\'ambiance, l\'animation es superbe, le service client très accueillante et souriante le service, donc boisson et repas donnent de la joie au Papilles 🥰 … »',
+    age: 'il y a 4 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-3',
+    authorName: 'Thierry Tchonang',
+    profile: 'Local Guide · 63 avis · 31 photos',
+    rating: 5,
+    comment: '« Très grand espace. Piscine, billard, resto, snack et la bouffe est très bonne en plus. »',
+    age: 'il y a 3 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-4',
+    authorName: 'Valery Njoya',
+    profile: '1 avis',
+    rating: 5,
+    comment: '« C’est un lieu très agréable et je suis satisfait du service chaque fois que je m’y rends 🥰 … »',
+    age: 'il y a 3 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-5',
+    authorName: 'Vincent de paul Mvomo',
+    profile: '1 avis',
+    rating: 5,
+    comment: '« Génial tout simplement »',
+    priceNote: '10–12 k FCFA par personne',
+    age: 'il y a 5 mois',
+    status: 'approved',
+  },
+  {
+    id: 'rev-6',
+    authorName: 'Junior Nkene',
+    profile: '5 avis · 4 photos',
+    rating: 5,
+    comment: '« Un lieu de détente avec une bonne sécurité »',
+    age: 'il y a 4 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-7',
+    authorName: 'Hertrick Sharingan',
+    profile: 'Local Guide · 23 avis · 11 photos',
+    rating: 5,
+    comment: '« C\'est tout simplement esquis!!! »',
+    age: 'il y a 4 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-8',
+    authorName: 'N M',
+    profile: '3 avis',
+    rating: 5,
+    comment: '« C\'est innovant ça!!! »',
+    age: 'il y a 4 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-9',
+    authorName: 'Fokou Dilane',
+    profile: 'Local Guide · 11 avis · 21 photos',
+    rating: 5,
+    comment: '« Meilleurs »',
+    age: 'il y a 3 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-10',
+    authorName: 'Picou Picette',
+    profile: 'Local Guide · 6 avis · 1 photo',
+    rating: 5,
+    comment: '« Passable »',
+    age: 'il y a 2 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-11',
+    authorName: 'Thomas D\'acquin Tagne',
+    profile: '1 avis',
+    rating: 5,
+    comment: '« 👍👍👍👍 … »',
+    age: 'il y a 4 ans',
+    status: 'approved',
+  },
+  {
+    id: 'rev-12',
+    authorName: 'Matthias Kengni',
+    profile: 'Local Guide · 88 avis · 122 photos',
+    rating: 5,
+    comment: '« C\'est du top niveau »',
+    priceNote: 'plus de 20 000 FCFA par personne',
+    age: 'il y a 2 jours',
+    isNew: true,
+    status: 'approved',
+  },
+  {
+    id: 'rev-13',
+    authorName: 'Ya-neek Delor',
+    profile: 'Local Guide · 29 avis · 56 photos',
+    rating: 5,
+    comment: '« Un Cadre responsable. Pas caché mais pourtant discret avec piscine et une variété culinaire. Des programmes à couper le souffle tout au long de la semaine. … »',
+    age: 'modifié il y a 5 jours',
+    interactionsCount: 2,
+    status: 'approved',
+  },
+  {
+    id: 'rev-14',
+    authorName: 'bitada jeremie',
+    profile: '2 photos',
+    rating: 5,
+    comment: '', // Aucun texte fourni
+    priceNote: '8–10 k FCFA par personne',
+    age: 'il y a 4 mois',
+    status: 'approved',
+  },
+  {
+    id: 'rev-15',
+    authorName: 'Martine Vera Ngallet',
+    profile: 'Local Guide · 68 avis · 49 photos',
+    rating: 5,
+    comment: '« Cuisine : 4\nService : 4 … »',
+    age: 'il y a 9 mois',
+    status: 'approved',
+  },
+  {
+    id: 'rev-16',
+    authorName: 'Georges DEKOU',
+    profile: 'Local Guide · 26 avis · 24 photos',
+    rating: 5,
+    comment: '« Service : 3\nAmbiance : 4 … »',
+    age: 'il y a 11 mois',
+    status: 'approved',
+  },
+  {
+    id: 'rev-17',
+    authorName: 'Cyprien Mbita',
+    profile: 'Local Guide · 24 avis · 1 photo',
+    rating: 5,
+    comment: '« Cuisine : 5\nService : 3 … »',
+    age: 'il y a un an',
+    status: 'approved',
+  },
+  {
+    id: 'rev-18',
+    authorName: 'Foka Towa',
+    profile: 'Local Guide · 36 avis · 1 photo',
+    rating: 5,
+    comment: '« Cuisine : 3\nService : 3 … »',
+    age: 'il y a un an',
+    status: 'approved',
+  },
+  {
+    id: 'rev-19',
+    authorName: 'Celica Belviane',
+    rating: 5,
+    comment: '« Cuisine : 5 »',
+    age: 'il y a un an',
+    status: 'approved',
+  },
+];
